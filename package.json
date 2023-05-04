@@ -8,6 +8,16 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
+  "browser": {
+    "http": false,
+    "https": false,
+    "net": false,
+    "path": false,
+    "stream": false,
+    "tls": false,
+    "zlib": false,
+    "util": false
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "^14.1.0",
@@ -18,8 +28,16 @@
     "@angular/platform-browser": "^14.1.0",
     "@angular/platform-browser-dynamic": "^14.1.0",
     "@angular/router": "^14.1.0",
+    "@ngrx/core": "^1.2.0",
+    "@ngrx/effects": "^15.4.0",
+    "@ngrx/store": "^15.4.0",
+    "connectycube": "^3.26.0",
+    "http": "^0.0.1-security",
+    "node-polyfill-webpack-plugin": "^2.0.1",
     "rxjs": "~7.5.0",
+    "stream-http": "^3.2.0",
     "tslib": "^2.3.0",
+    "url": "^0.11.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
