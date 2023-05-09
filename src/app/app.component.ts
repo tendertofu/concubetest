@@ -154,11 +154,11 @@ export class AppComponent {
     //Join Room
     await session
       .join(this.selectedRoomId, this.myUserId, this.myDisplayName)
-      .then(() => {
-        console.log("SUCCESSFULLY JOINED ROOM");
+      .then((res:any) => {
+        console.log("RESPONSE: "+res);
         //event listeners
         
-      })
+      }) 
       .catch((error: any) => { });
 
     //const confRoomId = await session.currentRoomId;
